@@ -50,9 +50,39 @@ In both cases the statement can be a code block.j
 
 9. The moon's gravity is about 17 percent that of earth's. Write a program that
    computes your effective weight on the moon.
+
+`
+class EarthToMoonWeight {
+  public static void main(String args[]) {
+    double earthLbs = 210.0;
+    double moonLbs = earthLbs * 0.17;
+
+    System.out.print("If your weight on earth is " + earthLbs + ", your weight on the moon would be " + moonLbs + ".");
+  }
+
+}
+`
+
 10. Adapt Try This 1-2 so that it prints a conversion table of inches to meters.
     Display 12 feet of conversions, inch by inch. Output a blank line every 12
     inches. (one meter equals approximately 39.37 inches).
+
+`
+class InchToMeterTable {
+  public static void main(String args[]) {
+    int count = 0;
+    for (double i=10; i <= 144; i++) {
+      System.out.println(i + " inches is equal to " + (i/39.37) + " meters.");
+      count++;
+      if (count == 12) {
+        System.out.println();
+        count = 0;
+      }
+    }
+  }
+}
+`
+
 11. If you make a typing mistake when entering your program, what sort of error
   will record?
 12. Does it matter where on a line you put a statement?
