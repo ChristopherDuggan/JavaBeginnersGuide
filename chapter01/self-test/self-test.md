@@ -85,4 +85,10 @@ class InchToMeterTable {
 
 11. If you make a typing mistake when entering your program, what sort of error
   will record?
+
+You'll get some sort of syntax error when the compiler encounters it (or at some
+point shortly thereafter in the code).
+
 12. Does it matter where on a line you put a statement?
+
+No.
