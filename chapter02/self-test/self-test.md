@@ -75,5 +75,11 @@
 
 11. Does the use of a redundant parenthesis affect program performance?
 
+    Nope.
 
-12. Does a black define a scope?
+
+12. Does a block define a scope?
+
+    Each new block creates a new scope. I like to think of blocks as boxes made
+    of two way mirrors where you can see out from the inside but you can't see
+    in from the outside.
