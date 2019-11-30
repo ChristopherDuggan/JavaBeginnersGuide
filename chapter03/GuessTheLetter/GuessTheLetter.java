@@ -7,13 +7,13 @@ class GuessTheLetter {
     System.out.print("Can you guess it?: ");
 
     ch = (char) System.in.read();
-    if (ch == answer) System.out.println("**RIGHT**");
+    if (ch == answer) System.out.println("Right!");
+    else System.out.println("Sorry, that was wrong. The letter was " + answer);
   }
 }
 
 /* todo
  * pick the letter at random
- * tell the person they're wrong and prompt them to try agani
  * limit them to 5 tries
  * after 5 wrong answers, reveal the correct answer
  * ask if they'd like to play again (y or n)
