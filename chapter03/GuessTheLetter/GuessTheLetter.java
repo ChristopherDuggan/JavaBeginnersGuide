@@ -8,7 +8,11 @@ class GuessTheLetter {
 
     ch = (char) System.in.read();
     if (ch == answer) System.out.println("Right!");
-    else System.out.println("Sorry, that was wrong. The letter was " + answer);
+    else { System.out.print("Sorry, your answer was too ");
+      if (ch < answer) System.out.println("low");
+      else System.out.println("high");
+      System.out.println("The letter was " + answer);
+    }
   }
 }
 
