@@ -1,4 +1,4 @@
-# Chapter 1 *Self Test*
+# Chapter 1 **Self Test**
 
 1. What is bytecode and why is it important to Java's use for Internet
    programming?
@@ -34,8 +34,8 @@ A variable is a name bound to a piece of memory location.
 
    Single line comments begin with "//" and end automatically with a newline. Multiline comments open with "/*" and must be closed with "*/".
 
-7. Show the general form of the *if* statement. Show the general form of the
-   *for* loop.
+7. Show the general form of the **if** statement. Show the general form of the
+   **for** loop.
 
 if statement: `if (*conditional*) *statement*;`
 for loop:     `for (initialization; condition; iteration) *statement*;`

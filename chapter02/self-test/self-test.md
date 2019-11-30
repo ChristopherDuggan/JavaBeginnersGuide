@@ -1,4 +1,4 @@
-# Chapter 2 *Self Test*
+# Chapter 2 **Self Test**
 
 1. Why does Java strictly specify the range and behavior of its primitive
    types?
@@ -10,7 +10,7 @@
    used by some other programming languages?
 
 
-3. A *boolean* value can have any value you like because any non-zero value is
+3. A **boolean** value can have any value you like because any non-zero value is
    true. True or False?
 
    False. A boolean can be either true or false.
@@ -19,7 +19,7 @@
     `One
      Two
      Three`
-   using a single string, show the *println()* statement that produced it.
+   using a single string, show the **println()** statement that produced it.
 
 
 5. What is wrong with this fragment?
@@ -46,9 +46,9 @@
 
    `if(n != 0 && x/n)`
 
-8. In an expression, what type are *byte* and *short* promoted to?
+8. In an expression, what type are **byte** and **short** promoted to?
 
-   *Bytes* and *shorts* are promoted to *ints* in an expression.
+   **Bytes** and **shorts** are promoted to **ints** in an expression.
 
 9. In general, when is a cast needed?
 
