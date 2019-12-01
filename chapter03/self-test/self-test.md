@@ -116,7 +116,8 @@ class Power2Loop {
     character. Have the program stop when the user enters a period. At the end,
     have the program display the number of case changes that have taken place.
 
-` class ReverseCase {
+`
+  class ReverseCase {
   public static void main(String args[])
       throws java.io.IOException {
 
@@ -137,7 +138,8 @@ class Power2Loop {
       } while (input!='.');
       System.out.println(switchCount +  " cases were switched");
   }
-}`
+}
+`
 
 11. What is an infinite loop?
 
