@@ -34,12 +34,14 @@
       *statement*;
 
 3. Given
-    `if (e < 10)
+
+   `if (e < 10)
       if (y > 100) {
         if (!done) x = z;
         else y = z;
       }
       else System.out.println("error"); //what if?`
+
    to what **if** does the last **else** associate?
 
 if (y > 100).
@@ -49,7 +51,8 @@ if (y > 100).
 `for (int i = 1000; i >=0; i-=2)`
 
 5. Is the following fragment valid?
-    `for(int i = 0; i < num; i++)
+
+   `for(int i = 0; i < num; i++)
       sum += i;
 
      count = i;`
@@ -66,7 +69,8 @@ label transfers control to the end of the labeled block.
 
 7. In the following fragment, after the **break** statement executes, what is
    displayed?
-    `for(i=0; i < 10; i++) {
+
+   `for(i=0; i < 10; i++) {
       while (running){
         if (x < y) break;
       }
@@ -77,6 +81,7 @@ label transfers control to the end of the labeled block.
 after while
 
 8. What does the following fragment print?
+
     `for(int i = 0; i < 10; i++) {
       System.out.print(i + " ");
       if((i % 2) == 0) continue;
@@ -95,11 +100,13 @@ after while
    **for** loop to generate and display the progression 1, 2, 4, 8, 16, 32, and
    so on.
 
-`class Power2Loop {
+`
+class Power2Loop {
   public static void main(String args[]){
     for(int i = 1; i < 33; i*=2) System.out.println(i);
   }
-}`
+}
+`
 
 10. The ASCII lowercase letters are separated from the uppercase letters by 32.
     Thus, to convert a lowercase letter to uppercase, subtract 32 from it. Use
