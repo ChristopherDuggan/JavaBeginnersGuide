@@ -109,8 +109,34 @@ after while
     character. Have the program stop when the user enters a period. At the end,
     have the program display the number of case changes that have taken place.
 
+` class ReverseCase {
+  public static void main(String args[])
+      throws java.io.IOException {
 
+      int switchCount = 0;
+      int input;
+
+      do {
+        input =System.in.read();
+        if((input > 64) && (input < 91)) {
+          switchCount++;
+          input += 32;
+        }
+        else if((input > 96) && (input < 123)){
+          switchCount++;
+          input -= 32;
+        }
+        System.out.println((char)input);
+      } while (input!='.');
+      System.out.println(switchCount +  " cases were switched");
+  }
+}`
 
 11. What is an infinite loop?
+
+A loop that continues indefinitely.
+
 12.  When using **break** with a label, must the label be on a block that
      contains the  **break**?
+
+     Yes.

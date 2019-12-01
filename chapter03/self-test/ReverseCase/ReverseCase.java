@@ -31,7 +31,5 @@ class ReverseCase {
   }
 }
 
-
-// take in a sentence
-// for each character if char > 64 && char < 91, add 32 to it
-//                    if char > 96 && char < 123 subtract 32 from it
+  //todo
+  //make it take in a full string and reverse each character
