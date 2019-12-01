@@ -108,6 +108,9 @@ after while
     letters to lowercase, displaying the result. Make no changes to any other
     character. Have the program stop when the user enters a period. At the end,
     have the program display the number of case changes that have taken place.
+
+
+
 11. What is an infinite loop?
 12.  When using **break** with a label, must the label be on a block that
      contains the  **break**?
