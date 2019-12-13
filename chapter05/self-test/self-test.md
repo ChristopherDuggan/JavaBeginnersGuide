@@ -73,3 +73,47 @@ class SortString {
   }
 }
 `
+5. What is the difference between the string methods *indexOf()* and
+   *lastIndexOf()*?
+
+   *indexOf()* finds the index of the first occurrence of a pattern starting
+   from the front of the object. *lastIndexOf()*  finds the index of the first
+   occurrence of a pattern starting from the end of the object.
+
+6. Since all strings are objects of type *String*, show how you can tell the *length()* and *charAt()* methods on this string literal: "I like Java".
+
+You can use `"I like Java".length()` to show the length and `"I like
+Java".charAt(x)` to show the char at x.
+
+7. Expanding on the *Encode* cipher class, modify it so that it uses and
+   eight-character string as the key.
+
+8. Can the bitwise operators be applied to the *double* type?
+
+yes?
+
+9. Show how this sequence can be rewritten using the *?* operator.
+    `if(x < 0) y = 10;
+    else y = 20;`
+
+`x<0 ? y = 10: y = 20;`
+
+10. In the following fragment, is the *&* a bit-wise or logical operator?
+    Why?
+
+    `boolean a, b;
+    // ...
+    if(a & b)...`
+
+It is a boolean operator because it is being used as the test in a
+conditional expression.
+
+11. Is it an error to overrun the end of an array? Is it an error to index
+    an array with a negative value?
+
+    yes and yes.
+
+12. What is the unsigned right-shift operator?
+
+13. Rewrite the *MinMax* class shown earlier in this chapter so that it uses a
+    for-each style *for* loop.
