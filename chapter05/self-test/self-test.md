@@ -87,16 +87,51 @@ Java".charAt(x)` to show the char at x.
 
 7. Expanding on the *Encode* cipher class, modify it so that it uses and
    eight-character string as the key.
+`
+class Encode {
+  public static void main(String args[]) {
+    String msg = "This is a test";
+    String encmsg = "";
+    String decmsg = "";
+    String  key = "a string";
+    int n = 0;
+
+    System.out.print("Original message: ");
+    System.out.println(msg);
+
+    for(int i = 0; i < msg.length(); i++){
+      encmsg = encmsg + (char) (msg.charAt(i) ^ key.charAt(n));
+      n++;
+      if(n == 8) n = 0;
+    }
+
+    System.out.print("Encoded message: ");
+    System.out.println(encmsg);
+
+    n = 0;
+    for(int i = 0; i < msg.length(); i++){
+      decmsg = decmsg + (char) (encmsg.charAt(i) ^ key.charAt(n));
+      n++;
+      if(n == 8) n = 0;
+    }
+
+    System.out.print("Decoded message: ");
+    System.out.println(decmsg);
+  }
+}
+`
 
 8. Can the bitwise operators be applied to the *double* type?
 
-yes?
+no.
 
 9. Show how this sequence can be rewritten using the *?* operator.
     `if(x < 0) y = 10;
     else y = 20;`
 
 `x<0 ? y = 10: y = 20;`
+or
+`y = x < 0 ? 10 : 20;`
 
 10. In the following fragment, is the *&* a bit-wise or logical operator?
     Why?
@@ -105,8 +140,7 @@ yes?
     // ...
     if(a & b)...`
 
-It is a boolean operator because it is being used as the test in a
-conditional expression.
+It is a logical operator because the operands are booleans
 
 11. Is it an error to overrun the end of an array? Is it an error to index
     an array with a negative value?
@@ -114,6 +148,7 @@ conditional expression.
     yes and yes.
 
 12. What is the unsigned right-shift operator?
+  `>>>`
 
 13. Rewrite the *MinMax* class shown earlier in this chapter so that it uses a
     for-each style *for* loop.
