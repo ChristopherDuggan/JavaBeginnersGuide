@@ -117,3 +117,29 @@ conditional expression.
 
 13. Rewrite the *MinMax* class shown earlier in this chapter so that it uses a
     for-each style *for* loop.
+
+    `
+class MinMax {
+  public static void main(String args[]) {
+    int[] nums = {99, -10, 100123, 18, -978, 5623, 463, -9, 287, 49};
+    int min, max;
+
+    min = max = nums[0];
+    for(int n: nums) {
+      if(n < min) min = n;
+      if(n > max) max = n;
+    }
+    System.out.println("min and max: " + min + " " + max);
+  }
+}
+`
+14. Can the for loops that perform sorting in the *Bubble* class shown in *Try
+    This 5-1* be converted into for-each style loops? If not, why?
+
+No. The inner loop needs to get the current value of the outer loop and out
+of order values need to be reassigned. You can't do that with a for-each
+loop.
+
+15. Can a *String* control a *switch* statement?
+
+Yes.
