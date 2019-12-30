@@ -5,7 +5,7 @@ class FDemo {
     x=i;
   }
 
-  protected void finalize() {
+  protected void Finalize() {
     System.out.println("Finalizing " + x);
   }
 
