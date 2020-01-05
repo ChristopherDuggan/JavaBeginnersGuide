@@ -166,3 +166,51 @@ class BSDemo{
     s.backward(0);
   }
 }`
+
+7. If all objects of a class need to share the same variable, how must you
+   declare that variable?
+
+   Static.
+
+8. Why might you need to use a *static* block?
+
+   To perform initializations related to the class before the creation of class
+   objects.
+
+9. What is an inner class?
+  
+   A class nested within another class.
+   
+10. To make a memebr accessible only by other members of its class, what access
+    modifier must be used?
+
+    Private.
+
+11. The name of a method plus its parameter constitutes the method's __________.
+    
+    Signature.
+
+12. An int argument is passed to a mothed by using call-by-__________.
+
+    Value.
+
+13. Create a varargs method called sum() that sums the int values passed to it.
+    Have it return the result. Demonstrate its use.
+
+    `class Sum {
+  int sum(int ... nums) {
+    int total = 0;
+
+    for(int i = 0; i < nums.length; i++) total += nums[i];
+    return total;
+  }
+}
+
+class SumDemo {
+  public static void main(String[] args) {
+    Sum sumOb = new Sum();
+
+    int total = sumOb.sum(1, 2, 3, 4);
+    System.out.println("The sum of 1, 2, 3, and 4 is " + total);
+  }
+}`
