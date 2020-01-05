@@ -214,3 +214,13 @@ class SumDemo {
     System.out.println("The sum of 1, 2, 3, and 4 is " + total);
   }
 }`
+
+14. Can varargs methods be overloaded?
+
+    Yes.
+
+15. Show an example fo an overloaded varargs method that is ambigious.
+
+`
+int example(int ... num) {blah blah blah}
+int example(int x, int ... num) {bloh blee bloh}
